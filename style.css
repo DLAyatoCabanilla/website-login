@@ -1,0 +1,187 @@
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	transition: 0.2s;
+}
+html {
+	font-size: 15px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+	color: white;
+}
+h1{
+	font-weight: lighter;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+a:hover{
+	color: rgb(255, 255, 172);
+}
+li{
+	list-style-type: none;
+}
+.container {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+span{
+	color: rgb(255, 255, 172);
+}
+
+/* Navigation Section */
+#navigation{
+	width: 100%;
+	height: 15vh;
+	background-color: black;
+}
+
+.nav-container .nav-main{
+	position: absolute;
+	display: flex;
+	margin: 2rem;
+}
+.nav-container .nav-list{
+	display: flex;
+	float: right;
+	margin: 2rem;
+}
+.nav-container .nav-list li{
+	padding: 0 1rem 0 1rem;
+	margin-right: 2rem;
+	font-size: 1.5rem;
+}
+
+/* Hero */
+#hero{
+	width: 100%;
+	height: 70vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.603),rgba(0, 0, 0, 0.644)),url(herobg.jpg) no-repeat center / cover;
+}
+.hero-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+.hero-container .hero-res{
+	margin-right: 2rem;
+	padding: 3rem;
+}
+.hero-container .hero-res h1{
+	margin-bottom: 1rem;
+}
+.hero-container .hero-res a{
+	display: inline-block;
+	background-color: rgb(255, 255, 172);
+	padding: 1rem;
+	color: black;
+	font-size: 1.5rem;
+}
+.hero-container .hero-res a:hover{
+	color: rgb(255, 255, 172);
+	background-color: black;
+}
+.hero-container .hero-info{
+	max-width: 50%;
+	margin-left: 2rem;
+	padding: 3rem;
+}
+.hero-container .hero-info h1{
+	margin-bottom: 1rem;
+}
+.hero-container .hero-info p{
+	padding: 1rem;
+}
+
+/* Footer */
+#footer{
+	width: 100%;
+	height: 30vh;
+	background: rgb(31, 29, 29);
+}
+.footer-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer-container .footer-wrapper{
+	margin: 3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.footer-wrapper .footer-content{
+	padding: 1rem;
+	min-width: 22rem;
+	max-width: 22rem;
+	margin-left: 2rem;
+	margin-right: 2rem;
+	border: none;
+	color: rgb(255, 255, 172);
+	text-align: center;
+}
+.footer-wrapper .footer-content:hover{
+	color: rgb(255, 255, 255);
+}
+.footer-wrapper .footer-content h1{
+	margin-bottom: 1rem;
+}
+
+/* Reservation Section */
+#reservation{
+	width: 100%;
+	height: 70vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.603),rgba(0, 0, 0, 0.644)),url(herobg.jpg) no-repeat center / cover;
+}
+.res-container{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.res-container .res-title{
+	margin: 2rem;
+	margin-left: 0;
+	margin-bottom: 0;
+	font-size: 1.5rem;
+}
+.res-container .res-title:hover{
+	color: rgb(255, 255, 172);
+}
+.res-container .res-seat-contemt{
+	display: flex;
+}
+.res-container .res-seat{
+	text-align: center;
+	margin-top: 0;
+	margin: 1rem;
+	padding: 2rem;
+	background-color: rgba(0, 0, 0, 0.377);
+	border: solid .02rem;
+	border-color: black;
+	border-radius: .5rem;
+	font-size: 2rem;
+}
+.res-container .res-seat form{
+	display: grid;
+}
+.res-container .res-seat form input{
+	background-color: black;
+	border: none;
+	margin: 1rem;
+	padding: .8rem;
+	color: white;
+}
+.res-container .res-seat-button:hover{
+	background-color: rgb(255, 255, 172);
+	color: black;
+}
