@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Room 3</title>
+  <link rel="stylesheet" href="/static/res.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <div id="navigation">
+    <div class="nav-container">
+      <div class="nav-main">
+        <a href="index.html"><h1><span>N</span>ode.JS</h1></a>
+      </div>
+      <div class="nav-list">
+        <li><a href="index.html" data-after="Home">Home</a></li>
+        <li><a style="color: rgb(255, 255, 172);" href="res.html" data-after="Reservation">Reservation</a></li>
+        <li><a href="#" data-after="Order">Order Online</a></li>
+        <li> <a href="/logout">Logout</a></li>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reservation Section -->
+  <div id="reservation">
+    <div class="res-container">
+        <div class="res-wrapper">
+            <div class="res-wrapper-content">
+                <div class="res-title"><h1>Reservation</h1></div>
+                <div class="res-seat-contemt">
+                    <div class="res-seat">
+                        <form action="#">
+                            <label for="seating">Indoor Seating</label>
+                            <input type="date" id="birthday" class="inpt1"name="birthday">
+                            <input class="res-seat-button rst1" type="submit">
+                          </form>
+                    </div>
+                    <div class="res-seat">
+                        <form action="#" method="#">
+                            <label for="seating">Outdoor Seating</label>
+                            <input type="date" id="birthday" class="inpt" name="birthday">
+                            <input class="res-seat-button rst" type="submit">
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer">
+    <div class="footer-container">
+      <div class="footer-wrapper">
+        <div class="footer-content">
+          <h1>Location</h1>
+          <p>Somewhere 123, Random City, Area 51</p>
+        </div>
+        <div class="footer-content">
+          <h1>Contact</h1>
+          <p>0912-345-6789</p>
+        </div>
+        <div class="footer-content">
+          <h1>Email</h1>
+          <p>example_email@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="reserve">
+  <p>Youre Reservation has been confirmed</p>
+</div>
+  <script>
+    let reserve = document.querySelector(".reserve")
+    let birthday = document.querySelector(".inpt")
+
+    let resseat = document.querySelector(".rst")
+    resseat.addEventListener('click',(e) => {
+      e.preventDefault()
+      if(birthday.value !== '') {
+        reserve.textContent = "Youre Reservation has been confirmed"
+        reserve.style.backgroundColor ="aquamarine"
+        reserve.style.color = "black"
+
+        reserve.style.display = 'block'
+        setTimeout(() => {
+        reserve.style.display = 'none'
+        },2000)
+      }else {
+        reserve.textContent = "Please Reserve first"
+        reserve.style.backgroundColor ="rgba(201, 23, 23, 0.824)"
+        reserve.style.color = "#fff"
+        reserve.style.display = 'block'
+        setTimeout(() => {
+        reserve.style.display = 'none'
+        },2000)
+      }
+    })
+
+
+    let birthday1 = document.querySelector(".inpt1")
+    let resseat1 = document.querySelector(".rst1")
+    resseat1.addEventListener('click',(e) => {
+      e.preventDefault()
+      if(birthday1.value !== '') {
+        reserve.textContent = "Youre Reservation has been confirmed"
+        reserve.style.backgroundColor ="aquamarine"
+        reserve.style.color = "black"
+        reserve.style.display = 'block'
+        setTimeout(() => {
+        reserve.style.display = 'none'
+        },2000)
+      }else {
+        reserve.textContent = "Please Reserve first"
+        reserve.style.backgroundColor ="rgba(201, 23, 23, 0.824)"
+        reserve.style.color = "#fff"
+        reserve.style.display = 'block'
+        setTimeout(() => {
+        reserve.style.display = 'none'
+        },2000)
+      }
+    })
+  </script>
+</body>
+</html>
